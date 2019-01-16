@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>components example</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="main-nav">
+                <li class="nav-item">HOME</li>
+                <li class="nav-item">USERS</li>
+                <li class="nav-item">PORTFOLIO</li>
+                <li class="nav-item">CONTACT</li>
+            </ul>
+        </nav>
+        <article>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi. Dignissimos fugit repudiandae voluptatibus, autem optio enim adipisci nulla repellendus hic quis eos commodi in, dolores illum ducimus, delectus incidunt.Eveniet est impedit dolorum minus fugit recusandae sint facere neque voluptas! Quibusdam, sed voluptate. Dolor eveniet ullam tempore veritatis dolorem dicta odit vel laudantium quia aperiam. Perferendis maxime consequatur debitis!
+        </article>
+        <h3>Our Team</h3>
+        <div id="app">
+            <user  first_name="ChAOCHAO" @passfunccallup="logMainMessage" last_name="LI" role="dfasdfadf"></user>
+            <user  first_name="XINGXING" @passfunccallup="logMainMessage"  last_name="LI" role="dfadf"></user>
+        </div>
+    </main>
+
+
+    <!--templates!!!!!!!-->
+    <template id="activeuser">
+        <div>
+            <h3>{{ role }}</h3>
+            <button v-on:click="logChildMeg">log child click</button>
+            <button v-on:click="runParentFunt">run parent function</button>
+            <p>{{ first_name }}</p>
+            <p>{{ last_name }}</p>
+        </div>
+    </template>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
