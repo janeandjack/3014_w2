@@ -28,7 +28,15 @@
 
 
     <!--templates!!!!!!!-->
-    
+    <template id="userList">
+        <div>
+            <h3>Current User:
+                    <span v-if="user.length > 0">
+                        {{ users[0].First_name }} {{ users[0].Last_name }}
+                    </span>
+            </h3>
+        </div>
+    </template>>
 
     <script src="js/main.js"></script>
 </body>
