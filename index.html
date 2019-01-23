@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>components example</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.2/vue-router.min.js"></script>
+</head>
+<body>
+    <main>
+      
+   
+ 
+        <div id="app">
+            <router-link :to="{ path: '/' }"> HOMe</router-link>
+                     <router-link :to="{ path: '/users' }"> Users</router-link>
+                     <a href="#/contact">Contact</a>
+            <!--the router view elemetn si where the compeonents get rendered when changing the address bar the route-->
+            <transition name="fade" mode="out-in">
+                <router-view></router-view>>
+            </transition>
+         
+        </div>
+    </main>
+
+
+    <!--templates!!!!!!!-->
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
